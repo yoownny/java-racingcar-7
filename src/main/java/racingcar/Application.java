@@ -14,7 +14,7 @@ public class Application {
         RacingGame game = new RacingGame(carNames.split(","),attempts);
         game.start();
 
-        String winners = game.getWinners();
-        System.out.println("최종 우승자 : " + winners);
+        String[] winners = game.getWinners();
+        System.out.println("최종 우승자 : " + String.join(", ", winners));
     }
 }
