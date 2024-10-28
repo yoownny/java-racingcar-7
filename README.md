@@ -50,12 +50,15 @@
 
 ### 4️⃣ 테스트
 1. 단위 테스트
-2. 통합 테스트
+   - CarTest
+   - RacingGameTest
+   - InputValidatorTest
+3. 통합 테스트
+   - ApplicationTest
 
 ### 💡 참고사항
 - 모든 예외는 `IllegalArgumentException`으로 처리한다.
 - 프로그램은 예외 발생 시 해당 메시지를 출력하고 종료된다.
-- 단위 테스트와 통합 테스트는 같은 시나리오를 기반으로 한다.
 
 ### 입력
 - 경주할 자동차 이름(이름은 쉼표(,) 기준으로 구분)
