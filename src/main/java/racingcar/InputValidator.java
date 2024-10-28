@@ -11,11 +11,12 @@ public class InputValidator {
     }
 
     public static int validateAttempts(String attempts) {
-        if (!attempts.matches("\\d+")) {
+        int validAttempts;
+        try {
+            validAttempts = Integer.parseInt(attempts);
+        } catch (NumberFormatException e) {
             throw new IllegalArgumentException("시도 횟수는 숫자여야 합니다.");
         }
-
-        int validAttempts = Integer.parseInt(attempts);
         if (validAttempts <= 0) {
             throw new IllegalArgumentException("시도 횟수는 양수여야 합니다.");
         }

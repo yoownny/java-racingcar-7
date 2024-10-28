@@ -15,6 +15,7 @@ class RacingGameTest {
         game.start();
         String[] winners = game.getWinners();
         assertThat(winners).isNotNull();
+        assertThat(winners.length).isGreaterThanOrEqualTo(1);
     }
 
     @Test
@@ -25,6 +26,7 @@ class RacingGameTest {
         game.start();
         String[] winners = game.getWinners();
         assertThat(winners).isNotNull();
+        assertThat(winners.length).isGreaterThanOrEqualTo(1);
     }
 
     @Test
@@ -35,5 +37,6 @@ class RacingGameTest {
         game.start();
         String[] winners = game.getWinners();
         assertThat(winners).isNotNull();
+        assertThat(winners.length).isGreaterThanOrEqualTo(1);
     }
 }
